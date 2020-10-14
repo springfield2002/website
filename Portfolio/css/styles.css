@@ -1,0 +1,293 @@
+
+.navigation ul{
+	margin-top: 0;
+	list-style: none;
+	padding-left:0;
+	text-align: right;
+	height: 50px;
+  
+}
+.navigation a{
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover{
+	color:#f27609;
+}
+
+.navigation li.threeline {
+	display:none;
+}
+.navigation li{
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 50px;
+	text-align: right;
+
+
+}
+.navigation {
+	background-color: #2b2b2b;
+	height: 50px;
+	font-weight: 100;	
+	animation-name: profile-cabecalho;
+	animation-duration: 4s;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color:#2b2b2b ;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo{
+	color: white;
+	vertical-align: top;
+	 margin-left: 110px;
+	margin-top:-50px;
+}
+
+.conteudo span{
+	color:#FF671C;
+	display: block;
+}
+
+.conteudo div{
+	display: inline-block;
+	height:500px;
+}
+
+.profile-title{
+	padding-left: 60px;
+	height: 30px;
+	animation-name: profile-titulo;
+ 	animation-duration: 4s 
+}
+
+
+.profile-title h1{
+	font-size: 58px;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 58px;
+	
+}
+}
+
+.profile-title h2{
+	font-size: 29px;
+	font-weight: 100;
+	margin-top: -20px;
+
+}
+
+.profile-pic {
+	
+	text-align: center
+}
+
+.profile-pic img{
+	width:320px;
+	border-radius: 320px;
+	margin-top: 100px;
+ animation-name: profile-capa;
+ animation-duration: 4s 
+}
+
+.main{
+	padding: 50px 180px 50px 200px;
+	animation-name: main;
+ animation-duration: 2s 
+}
+
+.cv-pic {
+	float: right;
+	width: 430px;
+}
+
+.main h1{
+	font-weight: normal;
+}
+
+.main h2{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.main h3{
+	font-size: 12px;
+	color: #f27609;
+	text-transform: uppercase;
+}
+
+.main p{
+	font-weight: 100;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: justify;
+}
+
+
+.caminho{
+	margin-top: 0;
+	padding: 0;
+	height: 50px;
+	list-style: none;
+}
+
+.caminho a{
+	color: grey;
+}
+.caminho li{
+	line-height: 50px;
+	display: inline-block;
+	color: grey;
+}
+
+.social-img{
+	width: 80px;
+	padding-top:40px;
+	padding-left: 10px;
+	padding-bottom: 40px;
+
+}
+	
+.miniatura{
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	background-size: contain;
+	overflow: hidden;	
+}
+
+.miniatura a{
+	text-decoration: none;
+}
+.blackbox {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	padding-top: 120px;
+	transition: 1s
+}
+
+.blackbox:hover {
+	opacity: 0.8;
+	transition: 1s
+
+}
+
+.blackbox-text {
+	text-align: center;
+	
+}
+
+
+.blackbox-text h1 {
+	font-size: 16px;
+	color:#f27609;
+	text-transform: uppercase;
+	margin-top: 0;
+
+}
+
+
+.blackbox-text h2 {
+	color:#f27609;
+	text-transform: none;
+	font-weight: 400;
+
+}
+
+.foto-trabalhos{
+	width: 100%
+
+}
+.back-link {
+	color:#f27609;
+	text-decoration: none;
+}
+
+@keyframes profile-capa{
+	0%{transform:translate(0px,20px); 
+	    opacity: 0}
+	100%{transform:translate(0px,0px);
+		opacity: 1;}
+}
+@keyframes profile-titulo{
+	0%{transform:translate(0px,-20px); 
+	    opacity: 0}
+	100%{transform:translate(0px,0px);
+		opacity: 1;}
+}
+@keyframes profile-cabecalho{
+	0%{opacity: 0}
+	50%{opacity: 0}
+	100%{opacity: 1}
+}
+@keyframes main{
+	0%{transform:translate(-20px,0px); 
+	    opacity: 0}
+	100%{transform:translate(0px,0px);
+		opacity: 1;}
+}
+
+@media (max-width: 1000px) {
+	.navigation li {
+		display: none;
+
+	}
+
+	.navigation li.threeline{
+		display:inline-block;
+		width: 150px
+		height: 150px;
+
+	}
+
+	.profile-pic{
+		width: 100%;
+		margin-left: 0
+	}
+
+	.profile-title{
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.profile-pic img{
+		margin-top: 0
+		max-width:80%;
+	}
+
+	.profile-title h1{
+		margin-top: 0
+	}
+
+	.main{
+		padding: 10px 5% 40px 5%;
+	}
+
+	.main p{
+		text-align: left;
+		line-height: 30px;
+
+	}
+	
+	.caminho li {
+		font-size: 12px;
+	}
+
+	.cv-pic {
+	float: none;
+	max-width: 100%;
+}
+
+}

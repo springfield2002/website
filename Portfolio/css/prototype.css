@@ -1,0 +1,98 @@
+
+.navigation ul{
+	margin-top: 0;
+	list-style: none;
+	padding-left:0;
+	text-align: right;
+	height: 100px;
+  
+}
+.navigation a{
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover{
+	color:#f27609;
+}
+
+.navigation li.threeline {
+	display:none;
+}
+.navigation li{
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 50px;
+	text-align: right;
+
+
+}
+.navigation {
+	background-color: #000099;
+	height: 50px;
+	font-weight: 100;	
+	animation-name: profile-cabecalho;
+	animation-duration: 2s;
+}		
+@keyframes profile-cabecalho{
+	0%{opacity: 0}
+	50%{opacity: 0}
+	100%{opacity: 1}
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.inicial{
+	margin-top: 10px;
+	font-weight: 300;
+	display: inline-block;
+	
+
+}
+
+.inicial img{
+	width:600px;
+	height: 300px;
+
+}
+
+
+.inicial button{
+	
+	text-align: center;
+	background-color: #000099;
+	color: white;
+	padding: 15px 32px;
+	border: none;
+	font-size: 20px;
+}
+
+.btn:hover{
+	animation-name:btn-expand;
+	animation-duration: 1s;
+	padding: 20px 36px; font-size: 24px;
+}
+
+.search {
+	color: white;
+	font-size: 30px;
+}
+
+.meanings {
+	display: inline-block;
+}
+.meanings div{
+	margin: 0;
+	padding: 0;
+	
+}
+
+@keyframes btn-expand{
+	0%{padding: 15px 32px; font-size: 20px}
+	100%{padding: 20px 36px; font-size: 24px}
+}
